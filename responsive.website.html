@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-website</title>
+    <style>
+        body{
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid plum;
+        }
+        h1{
+            font-size: 10vw;
+        }
+        .vai img{
+            width: 90%;
+        }
+        .container-two{
+            display: flex;
+        }
+        .container-two .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .container-two{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My Responsive website</h1>
+    </section>
+    <section class="vai">
+        <h3>vai</h3>
+        <img src="./images/sleep.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two parts</h2>
+        <div class="container-two split">
+            <img src="./images/food.jpg" alt="">
+            <img src="./images/sleep.jpg" alt="">
+        </div>
+    </section>
+    <!-- 
+        1.viewport meta tag
+        2.CSS Relative unit
+        3.Responsive Image (Fluid image)
+        4.body max-width and margin auto
+     -->
+</body>
+</html>
